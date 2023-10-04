@@ -5,22 +5,31 @@ class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
     body: Center(
       child: SingleChildScrollView(
-        padding: EdgeInsets.all(32),
+        padding: const EdgeInsets.all(32),
         child: Column(
           children: <Widget>[
       //ContenedorUno imagen universidad
-      ContenedorUno(),
+      const ContenedorUno(),
       //ContenedorDos Carrera de Pregrado
-      ContenedorDos(),
+      const ContenedorDos(),
       //Contenedor de redes sociales
-      ContenedorTres(),
+      const ContenedorTres(),
       //Contenedor Descripcion de la Carrera
-      ContenedorCuatro(),
+      const ContenedorCuatro(),
       //Contenedor Información Clave
-      ContenedorCinco(),
+      const ContenedorCinco(),
+      Center(
+            child: FloatingActionButton(
+              backgroundColor: const Color.fromRGBO(255, 165, 0, 1),
+              child:const Icon(Icons.input),
+              onPressed: (){
+                Navigator.pushNamed(context, 'list');
+              },
+            ),
+          )
           ]
     )
     )

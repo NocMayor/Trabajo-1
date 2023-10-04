@@ -8,9 +8,7 @@ class ContenedorUno extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Image(
-      image: NetworkImage(
-        'https://www.umayor.cl/um/bundles/educaciononline/images/carrera/ingenieria-informatica-regular.jpg'
-      )
+          image: NetworkImage('https://www.umayor.cl/um/bundles/educaciononline/images/carrera/ingenieria-informatica-regular.jpg')
     );
   }
 }
