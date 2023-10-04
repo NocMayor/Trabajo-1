@@ -21,6 +21,9 @@ class HomeScreen extends StatelessWidget {
       const ContenedorCuatro(),
       //Contenedor Información Clave
       const ContenedorCinco(),
+      SizedBox(
+          height: 10
+          ),
       Center(
             child: FloatingActionButton(
               backgroundColor: const Color.fromRGBO(255, 165, 0, 1),

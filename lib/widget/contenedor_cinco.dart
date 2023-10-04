@@ -7,8 +7,18 @@ class ContenedorCinco extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final size_screen = MediaQuery.of(context).size;
     return Container(
       margin: const EdgeInsets.symmetric(horizontal: 25, vertical: 10),
+child: Stack(
+        children: [
+          Container(
+            decoration: const BoxDecoration(
+              gradient: LinearGradient(colors: [
+                Color.fromRGBO(205, 206, 207, 1),
+                Color.fromRGBO(205, 206, 207, 1),
+              ])),
+      
     child: const Column(
       children: [
         Text('Información clave', style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
@@ -48,8 +58,14 @@ class ContenedorCinco extends StatelessWidget {
           ),
         Text('Para beneficios especiales de arancel y matrículas, déjanos tus datos de contacto.',
         textAlign: TextAlign.justify, style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold)),
-      ],
-    ),
+        SizedBox(
+          height: 10
+          ),
+              ],
+            ),
+          )
+        ]
+      ),
     );
   }
 }
